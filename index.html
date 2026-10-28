@@ -4,68 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Super Site Web</title>
-    <style>
-        /* تصميم خلفية وألوان الصفحة */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            text-align: center;
-            padding: 40px;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* تصميم البطاقة البيضاء وسط الصفحة */
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            max-width: 500px;
-            width: 100%;
-            color: #333;
-        }
-
-        h1 {
-            color: #4a00e0;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* تنسيق الأزرار الجميلة */
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #4a00e0;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #764ba2;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="card">
-        <h1>Bienvenue sur mon site web !</h1>
-        <p><strong>Visual Studio Code</strong> <strong>Git & GitHub</strong>.</p>
-        <a href="https://github.com/fatmajendoubi2-eng" target="_blank" class="btn">GitHub</a>
-    </div>
-
+    <main class="welcome">
+        <div class="welcome__image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"
+                alt="Un espace de travail lumineux avec un ordinateur portable et un carnet">
+        </div>
+        <section class="welcome__content" aria-labelledby="welcome-title">
+            <p class="eyebrow">Un espace pour apprendre</p>
+            <h1 id="welcome-title">Bienvenue sur mon site web&nbsp;!</h1>
+            <p class="intro">Je découvre la création web avec <strong>Visual Studio Code</strong> et je partage mes projets avec <strong>GitHub</strong>.</p>
+            <a class="btn" href="https://github.com/fatmajendoubi2-eng" target="_blank" rel="noopener noreferrer">
+                Découvrir mon GitHub <span aria-hidden="true">↗</span>
+            </a>
+        </section>
+    </main>
 </body>
 </html>
